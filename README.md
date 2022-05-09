@@ -20,7 +20,7 @@ This project and the code herein applies some electromagnetics (micro-wave, mm-w
 This repository and all code herein is licensed under the GNU GPL v3.0 license.
 
 ## Files
-This repository contains 3 files:
+This repository contains 4 files:
 - gen_data_final.py: Generates data for use with train_and_test.py
 - train_and_test.py: Trains and tests a binary and nonbinary classification model
 - README.md: This file

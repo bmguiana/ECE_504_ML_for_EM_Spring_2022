@@ -66,31 +66,31 @@ def train_and_test(X, y):
 print('Attempting to load data...')
 if NF == 0:
     try:
-        modal_data = np.load('./../results/control_{}.npy'.format(SNR), allow_pickle=True).item()
+        modal_data = np.load('./results/control_{}.npy'.format(SNR), allow_pickle=True).item()
         print('control data loaded')
     except:
         raise Exception('Control data unavailable. Try running gen_data_final.py with NF=0')
 if NF == 1:
     try:
-        modal_data = np.load('./../results/uniform_{}.npy'.format(SNR), allow_pickle=True).item()
+        modal_data = np.load('./results/uniform_{}.npy'.format(SNR), allow_pickle=True).item()
         print('uniform noise data loaded')
     except:
         raise Exception('Uniform noise data unavailable. Try running gen_data_final.py with NF=1')
 if NF == 2:
     try:
-        modal_data = np.load('./../results/exponential_{}.npy'.format(SNR), allow_pickle=True).item()
+        modal_data = np.load('./results/exponential_{}.npy'.format(SNR), allow_pickle=True).item()
         print('Exponential noise data loaded')
     except:
         raise Exception('Exponential noise data unavailable. Try running gen_data_final.py with NF=2')
 if NF == 3:
     try:
-        modal_data = np.load('./../results/normal_{}.npy'.format(SNR), allow_pickle=True).item()
+        modal_data = np.load('./results/normal_{}.npy'.format(SNR), allow_pickle=True).item()
         print('Normal noise data loaded')
     except:
         raise Exception('Normal noise data unavailable. Try running gen_data_final.py with NF=3')
 if NF == 4:
     try:
-        modal_data = np.load('./../results/correlated_{}.npy'.format(SNR), allow_pickle=True).item()
+        modal_data = np.load('./results/correlated_{}.npy'.format(SNR), allow_pickle=True).item()
         print('Correltated noise data loaded')
     except:
         raise Exception('Correlated noise data unavailable. Try running gen_data_final.py with NF=4')

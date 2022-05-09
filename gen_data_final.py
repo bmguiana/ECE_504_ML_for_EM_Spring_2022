@@ -157,17 +157,17 @@ dataset = {'mag_Ex': mag_Ex,
 print('\nSaving dictionary')
 if NF == 0:
     name = 'control_{}'.format(SNR)
-    np.save('./../results/control_{}'.format(SNR), dataset, allow_pickle=True)
+    np.save('./results/control_{}'.format(SNR), dataset, allow_pickle=True)
 elif NF == 1:
     name = 'uniform_{}'.format(SNR)
-    np.save('./../results/uniform_{}'.format(SNR), dataset, allow_pickle=True)
+    np.save('./results/uniform_{}'.format(SNR), dataset, allow_pickle=True)
 elif NF == 2:
     name = 'exponential_{}'.format(SNR)
-    np.save('./../results/exponential_{}'.format(SNR), dataset, allow_pickle=True)
+    np.save('./results/exponential_{}'.format(SNR), dataset, allow_pickle=True)
 elif NF == 3:
     name = 'normal_{}'.format(SNR)
-    np.save('./../results/normal_{}'.format(SNR), dataset, allow_pickle=True)
+    np.save('./results/normal_{}'.format(SNR), dataset, allow_pickle=True)
 elif NF == 4:
     name = 'correlated_{}'.format(SNR)
-    np.save('./../results/correlated_{}'.format(SNR), dataset, allow_pickle=True)
+    np.save('./results/correlated_{}'.format(SNR), dataset, allow_pickle=True)
 print('Saved to Results as {}.npy'.format(name))

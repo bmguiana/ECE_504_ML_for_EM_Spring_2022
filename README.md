@@ -23,7 +23,8 @@ This repository and all code herein is licensed under the GNU GPL v3.0 license.
 This repository contains 3 files:
 - gen_data_final.py: Generates data for use with train_and_test.py
 - train_and_test.py: Trains and tests a binary and nonbinary classification model
-- reamde.md: This file
+- README.md: This file
+- DELETEME.md: placeholder file meant to retain structure
 
 ## Code
 - gen_data_final.py: uses user provided inputs to generate data files.
